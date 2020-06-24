@@ -6,11 +6,11 @@ USE ems_database;
 
 CREATE TABLE employee(
 id INT NOT NULL  AUTO_INCREMENT, 
-first_name VARCHAR(30) NOT NULL,
-last_name VARCHAR(30) NOT NULL,
+first_name VARCHAR (30) NOT NULL,
+last_name VARCHAR (30) NOT NULL,
 role_id INT ,
 manager_id INT ,
-PRIMARY KEY(ID)
+PRIMARY KEY(id)
 );
 USE employee;
 INSERT into employee(first_name,last_name,role_id,manager_id)
@@ -56,7 +56,7 @@ VALUE
 
 USE ems_database;
 CREATE TABLE role(
-id INT NOT NULL AUTO_INCREMENT,
+id INT NOT NULL auto_increment,
 title VARCHAR(30),
 salary DECIMAL(12,2) NOT NULL ,
 department_id INT ,
@@ -64,7 +64,7 @@ PRIMARY KEY(id)
 );
 
 
-ALTER TABLE role AUTO_INCREMENT=100;
+ALTER TABLE role AUTO_INCREMENT = 100 ;
 SELECT * FROM role;
 INSERT INTO role(title,salary,department_id)
 VALUES 
